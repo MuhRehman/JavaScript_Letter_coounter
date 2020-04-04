@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+   <style>
+    #count {
+    background-color: transparent;
+    border: 0px solid;
+    height: 420px;
+    width: 300px;
+    color: #CCC;
+    font-weight: 400;
+    font-size: 222px;
+}
+   </style>
+   
+</head>
+<body>
+    <header id="header1" class=" bg-primary p-5 text-center"><h1 id="title">JavaScript Letter Counter</h1></header>
+    <div class="container">
+    <div class="card mt-5 mb-3 p-3">
+      <div class="text-center">
+        <div class="form-group">
+          <input type="text" id="mainInput" class="form-control" >
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 text-center">
+        </div>
+        <div class="col-md-4 text-center" >
+        <div id="count"> 0 </div>
+              </div>
+        <div class="col-md-4 text-center">
+      </div>
+    </div>
+    <div class="text-center">
+      <button class="btn-block p-2 bg-info" id="infom"><h1>Give Me Letter Count</h1></button>
+    </div>
+    </div>
+    </div>
+
+    <script>
+      // let myInputCounter = document.getElementById("myInput");
+      let myInputCounter = document.getElementById("mainInput");
+      let span = document.getElementById("count");
+        
+        myInputCounter.addEventListener("keyup", function(){
+          span.innerHTML =   this.value.length;
+
+                //  console.log(inputText);
+                 
+            // countNumber.innerHTML = inputText;
+        });
+           
+           
+           </script> 
+
+</body>
+
+
+</html>
